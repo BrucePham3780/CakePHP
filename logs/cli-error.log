@@ -1,0 +1,20 @@
+2018-11-08 07:26:35 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'jvb_data1.product' doesn't exist in C:\xampp\htdocs\cake1\vendor\cakephp\cakephp\src\Database\Schema\Collection.php on line 131
+Stack Trace:
+#0 C:\xampp\htdocs\cake1\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(97): Cake\Database\Schema\Collection->_reflect('Column', 'product', Array, Object(Cake\Database\Schema\TableSchema))
+#1 C:\xampp\htdocs\cake1\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(63): Cake\Database\Schema\Collection->describe('product', Array)
+#2 C:\xampp\htdocs\cake1\vendor\cakephp\cakephp\src\ORM\Table.php(548): Cake\Database\Schema\CachedCollection->describe('product')
+#3 C:\xampp\htdocs\cake1\vendor\cakephp\cakephp\src\ORM\Table.php(673): Cake\ORM\Table->getSchema()
+#4 C:\xampp\htdocs\cake1\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(221): Cake\ORM\Table->getPrimaryKey()
+#5 C:\xampp\htdocs\cake1\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(131): Bake\Shell\Task\ModelTask->getAssociations(Object(Cake\ORM\Table))
+#6 C:\xampp\htdocs\cake1\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(114): Bake\Shell\Task\ModelTask->getTableContext(Object(Cake\ORM\Table), 'product', 'Product')
+#7 C:\xampp\htdocs\cake1\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(101): Bake\Shell\Task\ModelTask->bake('Product')
+#8 C:\xampp\htdocs\cake1\vendor\cakephp\bake\src\Shell\BakeShell.php(273): Bake\Shell\Task\ModelTask->main('Product')
+#9 C:\xampp\htdocs\cake1\vendor\cakephp\cakephp\src\Collection\CollectionTrait.php(51): Bake\Shell\BakeShell->Bake\Shell\{closure}('Product', 0)
+#10 C:\xampp\htdocs\cake1\vendor\cakephp\bake\src\Shell\BakeShell.php(274): Cake\Collection\Collection->each(Object(Closure))
+#11 C:\xampp\htdocs\cake1\vendor\cakephp\cakephp\src\Console\Shell.php(518): Bake\Shell\BakeShell->all('product')
+#12 C:\xampp\htdocs\cake1\vendor\cakephp\cakephp\src\Console\CommandRunner.php(342): Cake\Console\Shell->runCommand(Array, true)
+#13 C:\xampp\htdocs\cake1\vendor\cakephp\cakephp\src\Console\CommandRunner.php(164): Cake\Console\CommandRunner->runShell(Object(Bake\Shell\BakeShell), Array)
+#14 C:\xampp\htdocs\cake1\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#15 {main}
+
+
